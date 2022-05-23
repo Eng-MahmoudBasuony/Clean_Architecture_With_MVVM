@@ -7,7 +7,6 @@ class MyApp extends StatefulWidget {
   //named constructor
   MyApp._internal();
 
-  int appState=0;
   static final MyApp _instance = MyApp._internal(); // singleton or single instance
   factory MyApp() => _instance; //factory
 
@@ -24,34 +23,4 @@ class _MyAppState extends State<MyApp> {
   }
 }
 
-//------- for test only
-class Test extends StatelessWidget {
 
-
-
-  updateAppState(){
-    MyApp().appState=11;
-  }
-
-  getAppState2(){
-  print(MyApp().appState); //11
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
-class Test2 extends StatelessWidget {
-
-
-
-  getAppState2(){
-    print(MyApp().appState); //11
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
