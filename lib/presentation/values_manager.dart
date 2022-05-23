@@ -1,3 +1,4 @@
+//-- Margin  like for container or any widget
 class AppMargin {
   static const double m8 = 8.0;
   static const double m12 = 12.0;
@@ -6,7 +7,7 @@ class AppMargin {
   static const double m18 = 18.0;
   static const double m20 = 20.0;
 }
-
+//-- Padding  like for container or any widget
 class AppPadding {
   static const double p8 = 8.0;
   static const double p12 = 12.0;
