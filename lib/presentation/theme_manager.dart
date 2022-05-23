@@ -11,10 +11,7 @@ ThemeData getApplicationTheme() {
       disabledColor: ColorManager.grey1,
       //--------- card view theme -----//
       cardTheme: CardTheme(
-       color: ColorManager.white,
-        shadowColor: ColorManager.grey,
-        elevation: AppSize.s4
-      )
-
-  );
+          color: ColorManager.white,
+          shadowColor: ColorManager.grey,
+          elevation: AppSize.s4));
 }
