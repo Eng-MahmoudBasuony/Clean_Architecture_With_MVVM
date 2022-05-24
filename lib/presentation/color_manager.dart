@@ -7,12 +7,12 @@ class ColorManager {
   static const Color lightGrey = Color(0xff9E9E9E);
 
   // new colors
-  static Color darkPrimary = const Color(0xffd17d11);
-  static Color lightPrimary = const Color(0xCCd17d11); // color with 80% opacity
-  static Color grey1 = const Color(0xff707070);
-  static Color grey2 = const Color(0xff797979);
-  static Color white = const Color(0xffFFFFFF);
-  static Color error = const Color(0xffe61f34); // red color
+  static const Color darkPrimary =  Color(0xffd17d11);
+  static const Color lightPrimary =  Color(0xCCd17d11); // color with 80% opacity
+  static const Color grey1 =  Color(0xff707070);
+  static const Color grey2 =  Color(0xff797979);
+  static const Color white =  Color(0xffFFFFFF);
+  static const Color error =  Color(0xffe61f34); // red color
 //Hexadecimal color code for transparency
 //https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4
 }
