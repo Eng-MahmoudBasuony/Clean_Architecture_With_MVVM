@@ -62,7 +62,7 @@ ThemeData getApplicationTheme() {
       ///---- input Decoration Theme (text from field) ----//
       inputDecorationTheme: InputDecorationTheme(
         //---- content Padding -----//
-        contentPadding: EdgeInsets.all(AppPadding.p8),
+        contentPadding: const EdgeInsets.all(AppPadding.p8),
         //----- hint Style -----//
         hintStyle:
             getRegularStyle(color: ColorManager.grey, fontSize: FontSize.s14),
@@ -91,5 +91,6 @@ ThemeData getApplicationTheme() {
             borderSide:
                 BorderSide(color: ColorManager.primary, width: AppSize.s1_5),
             borderRadius: BorderRadius.all(Radius.circular(AppSize.s8))),
-      ));
+      )
+  );
 }
