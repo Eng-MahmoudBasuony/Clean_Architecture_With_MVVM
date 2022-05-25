@@ -1,8 +1,9 @@
-import 'package:clean_architecture_with_mvvm/presentation/color_manager.dart';
-import 'package:clean_architecture_with_mvvm/presentation/font_manager.dart';
-import 'package:clean_architecture_with_mvvm/presentation/styles_manager.dart';
-import 'package:clean_architecture_with_mvvm/presentation/values_manager.dart';
+import '../../presentation/resources/color_manager.dart';
+import '../../presentation/resources/font_manager.dart';
+import '../../presentation/resources/styles_manager.dart';
 import 'package:flutter/material.dart';
+
+import 'values_manager.dart';
 
 ThemeData getApplicationTheme() {
   return ThemeData(
@@ -15,7 +16,7 @@ ThemeData getApplicationTheme() {
       splashColor: ColorManager.lightPrimary,
       //ripple effect color
       ///--------- card view theme -----//
-      cardTheme: CardTheme(
+      cardTheme: const CardTheme(
           color: ColorManager.white,
           shadowColor: ColorManager.grey,
           elevation: AppSize.s4),
@@ -32,8 +33,8 @@ ThemeData getApplicationTheme() {
           )),
 
       ///----------- button theme ---------//
-      buttonTheme: ButtonThemeData(
-          shape: const StadiumBorder(),
+      buttonTheme: const ButtonThemeData(
+          shape: StadiumBorder(),
           disabledColor: ColorManager.grey,
           splashColor: ColorManager.white,
           buttonColor: ColorManager.primary),
