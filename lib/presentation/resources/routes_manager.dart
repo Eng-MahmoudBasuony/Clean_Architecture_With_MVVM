@@ -6,6 +6,8 @@ import 'package:clean_architecture_with_mvvm/presentation/splash/splash_view.dar
 import 'package:clean_architecture_with_mvvm/presentation/store_details/store_details_view.dart';
 import 'package:flutter/material.dart';
 
+import 'strings_manager.dart';
+
 class Routes {
   static const String splashRoute = "/";
   static const String loginRoute = "/login";
@@ -45,9 +47,9 @@ class RouteGenerator{
 
     return MaterialPageRoute(builder: (_)=>Scaffold(
       appBar: AppBar(
-        title: const Text("Route not found"), //todo move this string to strings manager
+        title: const Text(AppStrings.noRouteFound), 
       ),
-      body: const Center(child: Text("Route not found")),
+      body: const Center(child: Text(AppStrings.noRouteFound)),
     ));
   }
 
