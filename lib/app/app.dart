@@ -7,9 +7,9 @@ class MyApp extends StatefulWidget {
   //const MyApp({Key? key}) : super(key: key); //Default constructor
 
   //named constructor
-  MyApp._internal();
+  const MyApp._internal();
 
-  static final MyApp _instance =
+  static const MyApp _instance =
       MyApp._internal(); // singleton or single instance
   factory MyApp() => _instance; //factory
 
@@ -21,6 +21,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       onGenerateRoute: RouteGenerator.getRoute,
       initialRoute: Routes.splashRoute,
       theme: getApplicationTheme(),
